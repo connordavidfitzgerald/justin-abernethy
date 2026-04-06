@@ -1,9 +1,0 @@
-{
-	"compatibility_date": "2026-03-29",
-	"compatibility_flags": ["global_fetch_strictly_public"],
-	"name": "justin",
-	"pages_build_output_dir": "./dist",
-	"observability": {
-		"enabled": true
-	}
-}
