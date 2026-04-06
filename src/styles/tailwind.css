@@ -3,8 +3,8 @@
 @theme static {
   --font-sans: 'Helvetica Neue Condensed', sans-serif;
 
-  --text-sm: 0.75rem;
-  --text-md: 0.95rem;
+  --text-sm: 0.8rem;
+  --text-md: 0.9rem;
 
   --spacing-unit-sm: var(--unit-sm);
   --spacing-unit-md: var(--unit-md);
