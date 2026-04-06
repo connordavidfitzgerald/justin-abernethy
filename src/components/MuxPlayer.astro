@@ -1,0 +1,21 @@
+---
+export interface MuxPlayerProps {
+	playbackId: string;
+	videoTitle?: string;
+	viewerUserId?: string;
+	thumbnailTime?: number;
+	autoplay?: boolean;
+}
+
+const { playbackId, videoTitle = 'Video', viewerUserId, thumbnailTime, autoplay = false } = Astro.props;
+
+const playerProps = {
+	'playback-id': playbackId,
+	'metadata-video-title': videoTitle,
+	...(viewerUserId && { 'metadata-viewer-user-id': viewerUserId }),
+	...(thumbnailTime && { 'thumbnail-time': thumbnailTime }),
+	...(autoplay && { autoplay: true }),
+};
+---
+
+<mux-player {...playerProps} class="w-full rounded-lg shadow-2xl" />
